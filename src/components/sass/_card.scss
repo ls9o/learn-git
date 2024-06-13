@@ -1,0 +1,113 @@
+
+.center {
+  display: flex;
+  flex-direction: column;
+  position: relative; /* เพื่อให้สามารถใช้งาน position: absolute ในปุ่มได้ */
+}
+
+/* CSS ที่ปรับปรุง */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; /* เปลี่ยนเป็น flex-start */
+  gap: 10px; /* ช่องว่างระหว่างกล่อง */
+}
+
+.data {
+  border: solid 0.5px rgb(150, 150, 150);
+  border-radius: 15px;
+  padding: 15px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* flex: 0 1 auto; ลบออก */
+  box-sizing: border-box;
+  width: 90%; /* กำหนดขนาดกล่องให้เต็มความกว้างของ container */
+  position: relative;
+  
+}
+
+button {
+  background-color: rgb(253, 179, 179);
+  border: 1px solid;
+  border-radius: 2px;
+}
+button:hover {
+  cursor: pointer;
+}
+
+.showmoreitem{
+  margin-left: 90%;
+  padding: 10px 12px ;
+  border-radius: 50%;
+  border: none;
+  background-color: #d4d3d3;
+}
+
+.showmoreitem:hover{
+  background-color: #727272;
+}
+
+.deleteitem{
+  background-color: #e65555;
+  border-radius: 20%;
+}
+
+.fixitem{
+  background-color: #7ce655;
+  border-radius: 20%;
+  margin-left: 5px;
+}
+h2, p {
+  font-size: medium;
+}
+h5 {
+  font-size: larger;
+  margin-top: 60px;
+  padding: 20px;
+}
+
+.addprocess {
+  position: fixed;
+  right: 20px; /* ปรับตำแหน่งทางขวา */
+  bottom: 20px; /* ปรับตำแหน่งทางล่าง */
+  padding: 15px;
+  border-radius: 50%;
+  background-color: #e65555;
+  color: white;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, box-shadow 0.3s;
+  border: none;
+}
+
+.addprocess:hover {
+  background-color: #d44444;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.addprocess:active {
+  background-color: #c33333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.addprocess i {
+  margin: 0;
+  padding: 0;
+}
+
+/* Media Queries สำหรับหน้าจอขนาดเล็ก */
+@media (max-width: 768px) {
+  .data {
+    width: 90%; /* กำหนดขนาดกล่องให้เต็มความกว้างของ container */
+    margin-left: 0; /* ยกเลิก margin-left สำหรับหน้าจอขนาดเล็ก */
+  }
+}
+@media (min-width: 769px) and (max-width: 1100px) {
+  .data {
+    width: 90%; /* กำหนดขนาดกล่องให้เต็มความกว้างของ container */
+    margin-left: 0; /* ยกเลิก margin-left สำหรับหน้าจอขนาดกลาง */
+  }
+}

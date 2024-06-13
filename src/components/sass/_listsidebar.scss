@@ -1,0 +1,59 @@
+.ListSideBar {
+
+    ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow:auto;
+    background-color: #F7F7F7;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 10%;
+    height: 100%;
+    z-index: 0;
+    padding-top: 70px;
+    }
+  
+    li {
+      list-style-type: none;
+      padding: 5px;
+      float: left;
+      margin: 10px;
+      margin-right: 30px;
+  
+      .router-link {
+        text-decoration: none; /* ลบเส้นใต้ของลิงก์ */
+        color: rgb(0, 0, 0); /* สีของลิงก์ */
+        display: block; /* ทำให้ลิงก์แสดงเป็นบล็อก */
+        text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
+        padding: 6px; /* เพิ่ม padding เพื่อให้ลิงก์ใหญ่ขึ้นและดูมีพื้นที่มากขึ้น */
+      }
+  
+      .router-link:hover {
+        color: rgb(255, 0, 0); /* เปลี่ยนสีของลิงก์เมื่อ hover */
+      }
+    }
+  
+    h1 {
+      height: 2.5em;
+    }
+  
+    // .collapse-icon {
+    //   position: absolute;
+    //   bottom: 0;
+    //   padding: 0.75em;
+    //   color: rgba(219, 85, 85, 0.7);
+    //   transition: 0.2s linear;
+  
+    //   &.rotate-180 {
+    //     transform: rotate(180deg);
+    //     transition: 0.2s linear;
+    //   }
+    // }
+  
+    // .my-icon {
+    //   font-family: 'Material Icons';
+    //   content: 'account_circle'; /* ชื่อไอคอนที่ต้องการ */
+    // }
+  }
